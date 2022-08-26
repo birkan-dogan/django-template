@@ -8,7 +8,17 @@
   </head>
   <body>
     <h1>this page comes from `application/templates/application/index.html`</h1>
-    {{request.user}}
+    <h1>{{request.user}}</h1>
+    <h1>{{ caption | title }}</h1>
+    <h1>{{dict1.django}}</h1>
+    <ul>
+      {% for i in my_list %} {% if i == 3 %}
+      <p style="color: red">found!</p>
+      {% else %}
+      <li>{{i}}</li>
+      {% endif %} {% endfor %}
+    </ul>
     <!-- using variables in templates -->
+    <!-- using tags in templates -->
   </body>
 </html>
