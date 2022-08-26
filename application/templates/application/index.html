@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'application/style.css' %}" />
   </head>
   <body>
     <h1>this page comes from `application/templates/application/index.html`</h1>
@@ -20,5 +22,10 @@
     </ul>
     <!-- using variables in templates -->
     <!-- using tags in templates -->
+    <img
+      src="{% static 'application/Django.png' %}"
+      width="300"
+      alt="example"
+    />
   </body>
 </html>
